@@ -47,10 +47,6 @@ function draw(){
         song.rate(2.5);
      }
 
-
-    if(scoreLW>0.2){
-
-    
     circle(leftWristX, leftWristY, 20);
 
     NumberleftY=Number(leftWristY);
@@ -59,7 +55,7 @@ function draw(){
     document.getElementById("Volume1").innerHTML="volume=" + volume;
     song.setVolume(volume);
 }
-}
+
 
 function preload(){
     song=loadSound("music.mp3");
